@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECORS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .with-children:hover .children{opacity:1;visibility:visible}.children{opacity:0;visibility:hidden;transition:opacity.3s}.swiper-pagination-bullet{background-color:#D42E5B;width:20px;height:20px;opacity:1;}.swiper-pagination-bullet-active{background-color:#9F2436;}@media(max-width:768px){.swiper-pagination-bullet{width:10px;height:10px;}}
+    </style>
+</head>
+
+<body class="font-body h-full flex flex-col ">
+    <!-- header-top -->
+    <header class="">
+        <div class="max-w-7xl mx-auto p-5  flex items-center flex-wrap 
+        lg:px-4 lg:gap-5">
+            <div class="mr-14 lg:m-0 xsm:w-60">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <p class="lg:hidden">Экстерьерные пленки DECORS</p>
+
+            <div id="burger" class="hidden flex-col justify-between w-9 h-6 lg:flex ml-auto">
+                <span class="block w-full h-1 bg-black rounded-sm"></span>
+                <span class="block w-full h-1 bg-black rounded-sm"></span>
+                <span class="block w-full h-1 bg-black rounded-sm"></span>
+            </div>
+            
+            <div class="flex items-center ml-auto gap-6 lg:w-full lg:justify-between xsm:gap-3">
+                <div class="text-zinc-800 flex flex-col items-end text-base font-bold gap-3
+                lg:py-3 lg:px-7 lg:border lg:rounded-lg lg:border-gray">
+                    <a href="#!" class=" text-center xsm:text-sm ">8 (800) 55-11-607</a>
+                    <p class="lg:hidden">Позвонить Вам?</p>
+                </div>
+                <button class="flex flex-col items-center bg-pink1 py-2.5 px-7 text-white text-sm rounded-lg transition-colors hover:bg-pink2 lg:py-4 xsm:py-3">
+                    <span class="font-bold lg:hidden">Напишите нам</span>
+                    <span class="lg:text-sm lg:font-bold">Онлайн чат</span>
+                </button>
+            </div>
+        </div>
+        <!-- header-bottom -->
+        <div id="menu" class="bg-pink2 transition-transform transition-opacity
+        lg:fixed lg:top-0 lg:left-0 lg:right-0 lg:bottom-0 lg:z-20  lg:translate-x-full lg:opacity-100">
+
+        
+        <div class="max-w-7xl mx-auto px-5 py-6 flex items-center w-full relative
+        lg:flex-col lg:px-8 lg:py-20 ">
+        
+        <svg id="close-mobile" class="hidden absolute top-10 right-5 lg:block" width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8.83887" y="30.052" width="30" height="5" rx="2.5" transform="rotate(-45 8.83887 30.052)" fill="white"/>
+            <rect x="30.0522" y="33.5875" width="30" height="5" rx="2.5" transform="rotate(-135 30.0522 33.5875)" fill="white"/>
+        </svg>
+
+                <a href="#!" class="pr-6 py-3 mr-6 border-r border-white lg:hidden">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2001_384)">
+                            <path
+                                d="M1.28427 13.8719L12.4085 4.15937L23.5327 13.8719C23.6886 14.005 23.8903 14.0709 24.094 14.0552C24.2978 14.0395 24.4872 13.9435 24.6211 13.788C24.7551 13.6325 24.8227 13.4301 24.8095 13.2246C24.7962 13.0192 24.703 12.8273 24.5502 12.6906L12.9172 2.53438C12.7762 2.41124 12.5959 2.34346 12.4093 2.34346C12.2226 2.34346 12.0423 2.41124 11.9013 2.53438L7.7553 6.15313V4.6875C7.7553 4.2731 7.59188 3.87567 7.301 3.58265C7.01012 3.28962 6.61561 3.125 6.20424 3.125C5.79287 3.125 5.39835 3.28962 5.10747 3.58265C4.81659 3.87567 4.65318 4.2731 4.65318 4.6875V8.86094L0.266778 12.6906C0.111657 12.8268 0.0164036 13.0193 0.00186871 13.2261C-0.0126662 13.4328 0.0547014 13.6369 0.189225 13.7937C0.471518 14.1187 0.960102 14.1547 1.28427 13.8719ZM9.30636 17.1875H15.5106V25H20.1638C20.5752 25 20.9697 24.8354 21.2606 24.5424C21.5514 24.2493 21.7148 23.8519 21.7148 23.4375V15.7797C21.7148 15.3109 21.507 14.8688 21.1472 14.5719L13.3919 8.16719C13.1148 7.93762 12.7672 7.8121 12.4085 7.8121C12.0498 7.8121 11.7022 7.93762 11.4251 8.16719L3.66981 14.5719C3.49212 14.7181 3.34898 14.9024 3.25079 15.1113C3.1526 15.3202 3.10181 15.5485 3.10212 15.7797V23.4375C3.10212 23.8519 3.26553 24.2493 3.55641 24.5424C3.84729 24.8354 4.24181 25 4.65318 25H9.30636V17.1875Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_2001_384">
+                                <rect width="25" height="25" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                <ul class="flex justify-between text-white text-lg w-full gap-2 flex-wrap justify-center uppercase
+                lg:flex-col lg:normal-case lg:gap-0 lg:mb-5">
+                    <li class="lg:font-bold hidden lg:block lg:border-b border-pink1 pb-2.5 mb-2.5"><a href="#!">Главная</a></li>
+                    <li class="lg:font-bold after:content-[''] after:absolute after:bg-arrow after:w-6 after:h-6 after:right-0 after:top-0 after:block
+                    relative pr-7 relative lg:after:hidden lg:border-b lg:border-pink1 lg:pb-2.5 lg:mb-2.5 with-children ">
+                        <a href="#!">Продукция</a>
+                        <div class="absolute z-10 -left-5 children lg:hidden">
+                            <ul class="bg-pink3 text-white text-base">
+                                <li class="p-5 w-64 hover:bg-pink2 transition-colors "><a href="#!">ЭКСТЕРЬЕРНЫЕ ПЛЁНКИ</a></li>
+                                <li class="p-5 w-64 hover:bg-pink2 transition-colors "><a href="#!">КЛЕЕВЫЕ МАТЕРИАЛЫ</a></li>
+                                <li class="p-5 w-64 hover:bg-pink2 transition-colors "><a href="#!">РЕТУШИРУЮЩИЕ МАРКЕРЫ</a></li>
+                                <li class="p-5 w-64 hover:bg-pink2 transition-colors "><a href="#!">ЗАЩИТНЫЕ ПЛЁНКИ</a></li>
+                                <li class="p-5 w-64 hover:bg-pink2 transition-colors "><a href="#!">САМОКЛЕЯЩИЙСЯ ЛИСТ</a></li>
+                                <li class="p-5 w-64 hover:bg-pink2 transition-colors "><a href="#!">ОБОРУДОВАНИЕ ДЛЯ ЛАМИНАЦИИ</a></li>
+                                <li class="p-5 w-64 hover:bg-pink2 transition-colors "><a href="#!">РАСХОДНЫЕ МАТЕРИАЛЫ</a></li>
+                                <li class="p-5 w-64 hover:bg-pink2 transition-colors "><a href="#!">САМОКЛЕЯЩАЯСЯ ЭКСТЕРЬЕРНАЯ ПЛЁНКА</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="lg:font-bold lg:border-b lg:border-pink1 lg:pb-2.5 lg:mb-2.5"><a href="#!">Услуги</a></li>
+                    <li class="lg:font-bold lg:border-b lg:border-pink1 lg:pb-2.5 lg:mb-2.5"><a href="#!">Преимущества</a></li>
+                    <li class="lg:font-bold lg:border-b lg:border-pink1 lg:pb-2.5 lg:mb-2.5"><a href="#!">Акции</a></li>
+                    <li class="lg:font-bold lg:border-b lg:border-pink1 lg:pb-2.5 lg:mb-2.5"><a href="#!">Отзывы</a></li>
+                    <li class="lg:font-bold lg:border-b lg:border-pink1 lg:pb-2.5 lg:mb-2.5"><a href="#!">Сертификаты</a></li>
+                    <li class="lg:font-bold lg:border-b lg:border-pink1 lg:pb-2.5 lg:mb-2.5"><a href="#!">Новости и статьи</a></li>
+                    <li class="lg:font-bold after:content-[''] after:absolute after:bg-arrow after:w-6 after:h-6 after:right-0 after:top-0 after:block relative pr-7 lg:after:hidden with-children">
+                        <a href="#!">Контакты</a>
+                        <div class="absolute z-10 -left-5 children lg:hidden">
+                            <ul class="bg-pink3 text-white text-base">
+                                <li class="p-5 w-64 hover:bg-pink2 transition-colors "><a href="#!">ЭКСТЕРЬЕРНЫЕ ПЛЁНКИ</a></li>
+                                <li class="p-5 w-64 hover:bg-pink2 transition-colors "><a href="#!">КЛЕЕВЫЕ МАТЕРИАЛЫ</a></li>
+                                <li class="p-5 w-64 hover:bg-pink2 transition-colors "><a href="#!">РЕТУШИРУЮЩИЕ МАРКЕРЫ</a></li>
+                                <li class="p-5 w-64 hover:bg-pink2 transition-colors "><a href="#!">ЗАЩИТНЫЕ ПЛЁНКИ</a></li>
+                                <li class="p-5 w-64 hover:bg-pink2 transition-colors "><a href="#!">САМОКЛЕЯЩИЙСЯ ЛИСТ</a></li>
+                                <li class="p-5 w-64 hover:bg-pink2 transition-colors "><a href="#!">ОБОРУДОВАНИЕ ДЛЯ ЛАМИНАЦИИ</a></li>
+                                <li class="p-5 w-64 hover:bg-pink2 transition-colors "><a href="#!">РАСХОДНЫЕ МАТЕРИАЛЫ</a></li>
+                                <li class="p-5 w-64 hover:bg-pink2 transition-colors "><a href="#!">САМОКЛЕЯЩАЯСЯ ЭКСТЕРЬЕРНАЯ ПЛЁНКА</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="">
+                    <form class="hidden flex gap-2 w-full lg:block">
+                        <input type="text" class="border-none bg-white rounded-lg px-7 py-3 sm:max-w-52" placeholder="Что будем искать?">
+                        <button class="bg-pink1 rounded-lg text-white px-7 py-3">Найти</button>
+                    </form>
+
+                    <button class="pl-6 py-3 ml-6 border-l border-white lg:hidden">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                            d="M9.5 3C11.2239 3 12.8772 3.68482 14.0962 4.90381C15.3152 6.12279 16 7.77609 16 9.5C16 11.11 15.41 12.59 14.44 13.73L14.71 14H15.5L20.5 19L19 20.5L14 15.5V14.71L13.73 14.44C12.59 15.41 11.11 16 9.5 16C7.77609 16 6.12279 15.3152 4.90381 14.0962C3.68482 12.8772 3 11.2239 3 9.5C3 7.77609 3.68482 6.12279 4.90381 4.90381C6.12279 3.68482 7.77609 3 9.5 3ZM9.5 5C7 5 5 7 5 9.5C5 12 7 14 9.5 14C12 14 14 12 14 9.5C14 7 12 5 9.5 5Z"
+                            fill="white" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-1">
+        <!-- hero -->
+        <section class="h-hero bg-cover bg-no-repeat mb-10 md:h-48 md:mb-5" style="background-image: url('img/main-bg.jpg');">
+            <div class="max-w-7xl mx-auto p-5 h-full relative md:flex md:items-center md:justify-center">
+                <h1 class="text-white font-bold text-h2 pt-44 md:p-0 md:text-lg">Экстерьерные пленки DECORS</h1>
+
+                <button class="absolute left-5 bottom-8 md:hidden">
+                    <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M24.65 17.8502V31.0983L20.151 26.5993C20.0723 26.5189 19.9786 26.4549 19.8751 26.411C19.7716 26.3671 19.6604 26.3442 19.548 26.3436C19.4355 26.343 19.3241 26.3647 19.2201 26.4074C19.1161 26.4502 19.0217 26.5131 18.9422 26.5926C18.8627 26.6721 18.7998 26.7666 18.757 26.8706C18.7143 26.9746 18.6926 27.086 18.6933 27.1984C18.6939 27.3108 18.7169 27.422 18.7608 27.5255C18.8047 27.629 18.8687 27.7228 18.9491 27.8014L24.8991 33.7514C25.0585 33.9107 25.2746 34.0002 25.5 34.0002C25.7254 34.0002 25.9416 33.9107 26.101 33.7514L32.051 27.8014C32.13 27.7225 32.1928 27.6288 32.2355 27.5257C32.2782 27.4225 32.3002 27.3119 32.3 27.2002C32.3 27.0321 32.2501 26.8678 32.1567 26.7281C32.0633 26.5883 31.9306 26.4794 31.7753 26.4151C31.62 26.3508 31.4491 26.3339 31.2842 26.3667C31.1194 26.3995 30.9679 26.4804 30.8491 26.5993L26.35 31.0983V17.8502C26.35 17.6248 26.2604 17.4086 26.101 17.2492C25.9416 17.0898 25.7254 17.0002 25.5 17.0002C25.2746 17.0002 25.0584 17.0898 24.899 17.2492C24.7396 17.4086 24.65 17.6248 24.65 17.8502Z"
+                            fill="white" />
+                        <circle cx="25.5" cy="25.5" r="25" stroke="white" />
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- benefits -->
+        <section class="mb-10">
+            <div class="max-w-7xl mx-auto px-5">
+                <div class="flex items-start w-full justify-between lg:flex-col lg:items-center">
+                    <div class="flex flex-col items-center gap-10">
+                        <div class="relative">
+                            <img src="img/img-1.png" alt="">
+                            <div class="absolute text-white bg-pink1 rounded-full p-1 w-36 h-36 flex flex-col justify-center items-center right-0 bottom-8">
+                               <div class="flex flex-col justify-center items-center rounded-full border border-dashed border-white p-4 w-full h-full font-bold text-base ">
+                                <span class="text-5xl">10</span>
+                                <span class="">ЛЕТ НА</span>
+                                <span class="">РЫНКЕ РФ</span>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center w-full">
+                            <a href="tel:+78005511607" class="font-bold text-h4 mb-2 sm:text-2xl">8 (800) 55-11-607</a>
+                            <a href="mailto:info@decors-pro.ru" class="text-h7 sm:text-base">info@decors-pro.ru</a>
+                        </div>
+                    </div>
+                    <div class="w-56% lg:w-full">
+                        <h2 class="text-h4 font-bold text-center mb-20 lg:mb-8 sm:text-2xl sm:font-extrabold">Экстерьерные пленки DECORS</h2>
+                        <div class="w-full bg-pink4 p-0.5 rounded mb-2">
+                            <div class="w-full bg-pink1 rounded text-center text-white font-bold text-xl sm:text-base">
+                                100%
+                            </div>
+                        </div>
+                        <p class="text-base mb-11 sm:text-sm sm:mb-2.5">24 года эксплуатации без изменения цвета</p>
+
+                        <div class="w-full bg-pink4 p-0.5 rounded mb-2">
+                            <div class="w-2/5 bg-pink1 rounded text-center text-white font-bold text-xl sm:text-base">
+                                40%
+                            </div>
+                        </div>
+                        <p class="text-base mb-11 sm:text-sm sm:mb-2.5">Акриловый слой плюс</p>
+
+                        <div class="w-full bg-pink4 p-0.5 rounded mb-2">
+                            <div class="w-30% bg-pink1 rounded text-center text-white font-bold text-xl sm:text-base">
+                                30%
+                            </div>
+                        </div>
+                        <p class="text-base mb-11 sm:text-sm sm:mb-2.5">Цена доступней до</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- benefits -->
+        <section class="mb-14 bg-cover bg-no-repeat sm:mb-7" style="background-image: url('img/benefits-bg.png');">
+            <div class="max-w-7xl mx-auto px-5 pt-10 pb-24 sm:px-4 sm:pt-7 sm:pb-10">
+                <h2 class="text-h4 font-bold text-center mb-12 text-white sm:text-2xl sm:font-extrabold sm:mb-6">Преимущества DECORS</h2>
+                <div class="grid grid-cols-4 gap-5 md:grid-cols-1 sm:gap-2.5">
+                    <div
+                        class="rounded-lg flex flex-col items-center backdrop-blur-3xl p-6 shadow-tripple bg-linearGradient gap-4 md:flex-row md:pt-4 md:pb-3">
+                        <img src="img/check.svg" alt="">
+                        <h3 class="text-h7 text-white text-center md:text-lg">Сертификат RAL</h3>
+                    </div>
+                    <div
+                        class="rounded-lg flex flex-col items-center backdrop-blur-3xl p-6 shadow-tripple bg-linearGradient gap-4 md:flex-row md:pt-4 md:pb-3">
+                        <img src="img/check.svg" alt="">
+                        <h3 class="text-h7 text-white text-center md:text-lg">Защита от нагрева</h3>
+                    </div>
+                    <div
+                        class="rounded-lg flex flex-col items-center backdrop-blur-3xl p-6 shadow-tripple bg-linearGradient gap-4 md:flex-row md:pt-4 md:pb-3">
+                        <img src="img/check.svg" alt="">
+                        <h3 class="text-h7 text-white text-center md:text-lg">Праймер</h3>
+                    </div>
+                    <div
+                        class="rounded-lg flex flex-col items-center backdrop-blur-3xl p-6 shadow-tripple bg-linearGradient gap-4 md:flex-row md:pt-4 md:pb-3">
+                        <img src="img/check.svg" alt="">
+                        <h3 class="text-h7 text-white text-center md:text-lg">Известный бренд</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- services -->
+        <section class="mb-17.5 sm:mb-7">
+            <div class="max-w-7xl mx-auto px-5">
+                <h2 class="text-center text-h4 mb-10 font-bold sm:text-2xl sm:font-extrabold sm:mb-4">Услуги</h2>
+
+                <div class="grid grid-cols-2 gap-5 mb-10 md:gap-2.5 md:grid-cols-1">
+                    <div class="border border-dashed border-pink2 rounded-lg py-14 px-10 lg:py-6 lg:px-8">
+                        <h3 class="text-h6 font-bold text-center mb-12 md:text-base md:mb-6">ДЛЯ ПРОФЕССИОНАЛОВ</h3>
+                        <div class="flex items-start gap-7 mb-6 md:mb-2.5">
+                            <img src="img/benefit-1.svg" alt="" class="md:w-10 md:h-10">
+                            <p class="text-h7 lg:text-sm">Бережная фирменная упаковка</p>
+                        </div>
+                        <div class="flex items-start gap-7 mb-6 md:mb-2.5">
+                            <img src="img/benefit-2.svg" alt="" class="md:w-10 md:h-10">
+                            <p class="text-h7 lg:text-sm">Бесплатная резка пленки по нужным размерам</p>
+                        </div>
+                        <div class="flex items-start gap-7 ">
+                            <img src="img/benefit-3.svg" alt="" class="md:w-10 md:h-10">
+                            <p class="text-h7 lg:text-sm">Доставка до терминала транспортной компании</p>
+                        </div>
+                    </div>
+
+                    <div class="border border-dashed border-pink2 rounded-lg py-14 px-10 lg:py-6 lg:px-8">
+                        <h3 class="text-h6 font-bold text-center mb-12 md:text-base md:mb-6">ДЛЯ НОВИЧКОВ</h3>
+                        <div class="flex items-start gap-7 mb-6 md:mb-2.5">
+                            <img src="img/benefit-4.svg" alt="" class="md:w-10 md:h-10">
+                            <p class="text-h7 lg:text-sm">Помощь в расчете стартапа и подборе оборудования</p>
+                        </div>
+                        <div class="flex items-start gap-7 mb-6 md:mb-2.5">
+                            <img src="img/benefit-5.svg" alt="" class="md:w-10 md:h-10">
+                            <p class="text-h7 lg:text-sm">Консультация технолога</p>
+                        </div>
+                        <div class="flex items-start gap-7 ">
+                            <img src="img/benefit-6.svg" alt="" class="md:w-10 md:h-10">
+                            <p class="text-h7 lg:text-sm">Обучение сотрудников</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="text-white rounded-lg bg-pink1 py-4 px-9 mx-auto block text-xl transition-colors hover:bg-pink2 sm:px-4 sm:py-2.5 sm:text-base">Сделать заказ</button>
+            </div>
+        </section>
+
+        <!-- how it work -->
+        <section class="mb-10 sm:mb-7">
+            <div class="max-w-7xl mx-auto px-5">
+                <h2 class="text-center text-h4 mb-14 font-bold  sm:text-2xl sm:font-extrabold sm:mb-6">Как работает заказ</h2>
+                <div class="grid grid-cols-5 gap-5 lg:grid-cols-1 sm:gap-4">
+                    <div class="">
+                        <p class="text-7xl text-pink3 font-bold mb-5 lg:text-center sm:text-5xl sm:mb-4">1</p>
+                        <h3 class="text-h4 font-bold mb-4 lg:text-center sm:text-h6 sm:mb-2.5">Заказ</h3>
+                        <p class="text-h7 lg:text-center sm:text-lg">Получите и проверьте счет</p>
+                    </div>
+                    <div class="">
+                        <p class="text-7xl text-pink3 font-bold mb-5 lg:text-center sm:text-5xl sm:mb-4">2</p>
+                        <h3 class="text-h4 font-bold mb-4 lg:text-center sm:text-h6 sm:mb-2.5">Счет</h3>
+                        <p class="text-h7 lg:text-center sm:text-lg">Подготовьте и отправьте заявку</p>
+                    </div>
+                    <div class="">
+                        <p class="text-7xl text-pink3 font-bold mb-5 lg:text-center sm:text-5xl sm:mb-4">3</p>
+                        <h3 class="text-h4 font-bold mb-4 lg:text-center sm:text-h6 sm:mb-2.5">Оплата</h3>
+                        <p class="text-h7 lg:text-center sm:text-lg">Подтвердите счет и произведите оплату</p>
+                    </div>
+                    <div class="">
+                        <p class="text-7xl text-pink3 font-bold mb-5 lg:text-center sm:text-5xl sm:mb-4">4</p>
+                        <h3 class="text-h4 font-bold mb-4 lg:text-center sm:text-h6 sm:mb-2.5">Выбор ТК</h3>
+                        <p class="text-h7 lg:text-center sm:text-lg">Сообщите пожелания по доставке</p>
+                    </div>
+                    <div class="">
+                        <p class="text-7xl text-pink3 font-bold mb-5 lg:text-center sm:text-5xl sm:mb-4">5</p>
+                        <h3 class="text-h4 font-bold mb-4 lg:text-center sm:text-h6 sm:mb-2.5">Доставка</h3>
+                        <p class="text-h7 lg:text-center sm:text-lg">Получите свой заказ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside class="mb-16 lg:mx-4 sm:mb-7">
+            <div class="
+            after:content-[''] after:absolute after:-top-6 after:left-5 after:h-7 after:w-10 after:bg-triangle after:bg-no-repeat after:bg-cover after:-z-50
+            relative max-w-7xl mx-auto px-5 pt-12 pb-14 rounded-lg bg-gradient-to-br from-pink1 to-pink5 flex flex-col items-center justify-center">
+                <h2 class="text-h6 font-bold text-white mb-8 sm:text-2xl sm:font-extrabold sm:mb-6 sm:text-center">Сделайте первый шаг</h2>
+                <button class="text-xl font-bold text-pink1 py-4 px-9 bg-white rounded-lg transition-colors hover:text-pink2 sm:text-sm sm:border-3 sm:border-pink1 sm:py-3 sm:px-5">Бесплатная консультация</button>
+            </div>
+        </aside>
+
+        <!-- reviews -->
+        <section class="mb-12">
+            <div class="max-w-7xl mx-auto px-5 relative">
+                
+                <h2 class="text-h4 font-bold text-center mb-12 sm:text-2xl sm:font-extrabold sm:mb-5">Отзывы клиентов</h2>
+
+                <div class="relative">
+                    <div class="swiper mySwiper px-1">
+                        <div class="swiper-wrapper border-box ">
+                            <div class="swiper-slide py-14 px-8 rounded shadow-custom bg-white sm:px-4 sm:pt-9 sm:pb-4">
+                                <p class="text-h7 mb-6 sm:text-base">
+                                    - Мы работаем больше 15 лет с разными пленками. Сейчас работаем с пленкой Decors. Очень
+                                    довольны качеством товара. Спасибо производителю!
+                                </p>
+                                <span class="text-h7 font-bold sm:text-base">Анвар, Россия</span>
+                            </div>
+                            <div class="swiper-slide py-14 px-8 rounded shadow-custom bg-white sm:px-4 sm:pt-9 sm:pb-4">
+                                <p class="text-h7 mb-6 sm:text-base">
+                                    - Используем пленку Decors уже почти год. По качеству ничем не хуже других пленок.
+                                    Конечно, нет такого разнообразия цветов, но в целом пленка хорошая. Клей ложится хорошо,
+                                    тянется тоже хорошо. Толщина пленки нормальная. Применяем для всех наружных ламинаций.
+                                    По качеству и цене самый лучший, на наш взгляд, вариант! Акриловый слой имеется. В
+                                    общем, довольны пленкой Decors. По основным цветам - махагон, золотой дуб, золотой орех,
+                                    антрацит, темный дуб - мы полностью перешли на Decors.
+                                </p>
+                                <span class="text-h7 font-bold sm:text-base">Мурат, СНГ</span>
+                            </div>
+                            <div class="swiper-slide py-14 px-8 rounded shadow-custom bg-white sm:px-4 sm:pt-9 sm:pb-4">
+                                <p class="text-h7 mb-6 sm:text-base">
+                                    - Берем пленку Decors с 2018 года. За это время пленка зарекомендовала себя наилучшим
+                                    образом. Очень радует акриловый слой и конечно наличие сертификата RAL. Доступная цена
+                                    делает пленку очень конкурентоспособной. Цветовая гамма не очень большая, но радуют
+                                    цвета антрацит и темный дуб, т.к. это основные цвета. Очень не хватает цвета «каштан» в
+                                    палитре.
+                                </p>
+                                <span class="text-h7 font-bold sm:text-base">Виталий, Россия</span>
+                            </div>
+                            <div class="swiper-slide py-14 px-8 rounded shadow-custom bg-white sm:px-4 sm:pt-9 sm:pb-4">
+                                <p class="text-h7 mb-6 sm:text-base">
+                                    - Работаем с Decors не первый год, за все время работы не было ни одного отрицательного
+                                    отзыва. Благодарим компанию за быстрое реагирование на заказ, доставку всегда в
+                                    оговоренные сроки, вежливое отношение к клиентам, хорошее качество продукции. Пленка для
+                                    ламинации профиля Decors имеет яркий цвет, приятный внешний вид, мягкую основу, обладает
+                                    морозоустойчивостью и высокой теплостойкостью, не меняет своих цветовых свойств при
+                                    изменении погодных факторов. Работать с ламинационной пленкой Decors одно удовольствие.
+                                    Спасибо вам за отличную работу, успехов и процветания вашей компании.
+                                </p>
+                                <span class="text-h7 font-bold sm:text-base">Андрей, СНГ</span>
+                            </div>
+                            <div class="swiper-slide py-14 px-8 rounded shadow-custom bg-white sm:px-4 sm:pt-9 sm:pb-4">
+                                <p class="text-h7 mb-6 sm:text-base">
+                                    - Неплохая пленка, работаем полгода, нареканий от потребителей нашей продукции нет.
+                                    Спасибо.
+                                </p>
+                                <span class="text-h7 font-bold sm:text-base">Валерий, Россия</span>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-pagination static mt-2"></div>                
+                    </div>
+                    <div class="absolute top-1/2 w-full flex justify-between z-10 lg:hidden">
+                        <div class="button-prev rotate-180">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="40" r="40" fill="#D42E5B" />
+                            <path d="M30 53.005L42.9906 40L30 26.995L34.0189 23L51 40L34.0189 57L30 53.005Z"
+                            fill="white" />
+                        </svg>
+                        </div>
+                        <div class="button-next">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="40" cy="40" r="40" fill="#D42E5B" />
+                                <path d="M30 53.005L42.9906 40L30 26.995L34.0189 23L51 40L34.0189 57L30 53.005Z"
+                                fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+               
+                <a href="#!" class="absolute right-0 bottom-2 text-xl font-bold md:static md:mx-auto md:block md:w-fit">Показать больше отзывов</a>
+            </div>
+        </section>
+
+        <!-- need-help -->
+        <aside class="mb-14 max-w-7xl mx-auto px-5" >
+            <div class=" rounded-lg bg-cover bg-no-repeat py-24 px-25 flex justify-between items-center md:flex-col md:gap-4 md:pt-9 md:pb-10 md:px-3" style="background-image: url('img/benefits-bg.png');">
+                <h2 class="text-h4 text-white font-bold md:text-center sm:text-base">Нужна помощь менеджера?</h2>
+                <button class="text-xl font-bold text-pink1 py-4 px-9 bg-white rounded-lg transition-colors hover:text-pink2 sm:py-2.5 sm:px-4 sm:text-sm">Обсудить заказ</button>
+            </div>
+        </aside>
+
+        <!-- news -->
+        <section class="mb-14">
+            <div class="max-w-7xl mx-auto px-5">
+                <h2 class="font-bold text-h4 text-center mb-12 sm:text-2xl sm:font-extrabold sm:mb-6">Новости</h2>
+                <div class="grid grid-cols-3 gap-7 md:grid-cols-1 md:gap-2">
+                    <div class="">
+                        <div class="rounded-lg overflow-hidden mb-6">
+                            <img src="img/news-1.jpg" alt="" class="md:w-full">
+                        </div>
+                        <h3 class="text-2xl mb-6 lg:text-base">Ведущие клиенты компании «ДекорС» посетили завод компании Decors L&C в Сеуле</h3>
+                        <a href="#!" class="text-xl font-bold underline lg:text-base">Подробнее »</a>
+                    </div>
+                    <div class="">
+                        <div class="rounded-lg overflow-hidden mb-6">
+                            <img src="img/news-2.jpg" alt="" class="md:w-full">
+                        </div>
+                        <h3 class="text-2xl mb-6 lg:text-base">«ДекорС» на Eurasia Window 2019</h3>
+                        <a href="#!" class="text-xl font-bold underline lg:text-base">Подробнее »</a>
+                    </div>
+                    <div class="shadow-news rounded-lg px-4 py-12 sm:px-4 sm:pt-9 sm:sb-5">
+                        <ul class="flex flex-col justify-between">
+                            <li class="font-bold text-xl border-b border-gray pb-7 mb-7 lg:text-base sm:text-center sm:pb-6 sm:mb-6"><a href="#!">Decors на MosBuild 2019</a></li>
+                            <li class="font-bold text-xl border-b border-gray pb-7 mb-7 lg:text-base sm:text-center sm:pb-6 sm:mb-6"><a href="#!">Decors - 24 года эксплуатации без изменений цвета</a></li>
+                            <li class="font-bold text-xl border-b border-gray pb-7 mb-7 lg:text-base sm:text-center sm:pb-6 sm:mb-6"><a href="#!">Decors на MosBuild 2021</a></li>
+                            <li class="font-bold text-xl  lg:text-base sm:text-center"><a href="#!">В палитре пленок Decors появились новые популярные люксовые цвета по цене основных.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+        <footer class="bg-pink2 text-white text-2xl pt-20 pb-14 lg:text-xl lg:pt-8 lg:pb-6">
+            <div class="max-w-7xl mx-auto px-5 grid grid-cols-2 md:grid-cols-1 md:gap-11  sm:text-sm">
+               <div class="grid grid-cols-footer gap-4 md:flex md:flex-col md:items-center md:font-bold">
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.9167 17C26.9167 14.2375 25.9545 11.8941 24.0302 9.96979C22.1059 8.04549 19.7625 7.08333 17 7.08333V4.25C18.7708 4.25 20.4295 4.58646 21.976 5.25937C23.5226 5.93229 24.8684 6.84132 26.0135 7.98646C27.1587 9.1316 28.0677 10.4774 28.7406 12.024C29.4135 13.5705 29.75 15.2292 29.75 17H26.9167ZM21.25 17C21.25 15.8194 20.8368 14.816 20.0104 13.9896C19.184 13.1632 18.1806 12.75 17 12.75V9.91667C18.9597 9.91667 20.6302 10.6073 22.0115 11.9885C23.3927 13.3698 24.0833 15.0403 24.0833 17H21.25ZM28.2625 29.75C25.3111 29.75 22.3951 29.1066 19.5146 27.8198C16.634 26.533 14.0132 24.709 11.6521 22.3479C9.29097 19.9868 7.46701 17.366 6.18021 14.4854C4.8934 11.6049 4.25 8.68889 4.25 5.7375C4.25 5.3125 4.39167 4.95833 4.675 4.675C4.95833 4.39167 5.3125 4.25 5.7375 4.25H11.475C11.8056 4.25 12.1007 4.36215 12.3604 4.58646C12.6201 4.81076 12.7736 5.07639 12.8208 5.38333L13.7417 10.3417C13.7889 10.7194 13.7771 11.0382 13.7063 11.2979C13.6354 11.5576 13.5056 11.7819 13.3167 11.9708L9.88125 15.4417C10.3535 16.3153 10.9142 17.1594 11.5635 17.974C12.2128 18.7885 12.9271 19.5736 13.7063 20.3292C14.4382 21.0611 15.2056 21.7399 16.0083 22.3656C16.8111 22.9913 17.6611 23.5639 18.5583 24.0833L21.8875 20.7542C22.1 20.5417 22.3774 20.3823 22.7198 20.276C23.0622 20.1698 23.3986 20.1403 23.7292 20.1875L28.6167 21.1792C28.9472 21.2736 29.2188 21.4448 29.4312 21.6927C29.6437 21.9406 29.75 22.2181 29.75 22.525V28.2625C29.75 28.6875 29.6083 29.0417 29.325 29.325C29.0417 29.6083 28.6875 29.75 28.2625 29.75ZM8.53542 12.75L10.8729 10.4125L10.2708 7.08333H7.11875C7.23681 8.05139 7.40208 9.00764 7.61458 9.95208C7.82708 10.8965 8.13403 11.8292 8.53542 12.75ZM21.2146 25.4292C22.1354 25.8306 23.074 26.1493 24.0302 26.3854C24.9865 26.6215 25.9486 26.775 26.9167 26.8458V23.7292L23.5875 23.0562L21.2146 25.4292Z" fill="white" />
+                    </svg>
+
+                    <ul class="mb-3 md:flex md:flex-col md:items-center">
+                        <li class="mb-1"><a href="#!">8 (800) 55-11-607</a></li>
+                        <li class="mb-1">WhatsApp: <a href="#!" class="underline"> +79833887010</a></li>
+                        <li class="mb-1">E-mail: <a href="#!" class="underline">info@decors-pro.ru</a></li>
+                    </ul>
+                    
+                    <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.5 16.5C17.2563 16.5 17.9036 16.2307 18.4422 15.6922C18.9807 15.1536 19.25 14.5063 19.25 13.75C19.25 12.9938 18.9807 12.3464 18.4422 11.8078C17.9036 11.2693 17.2563 11 16.5 11C15.7438 11 15.0964 11.2693 14.5578 11.8078C14.0193 12.3464 13.75 12.9938 13.75 13.75C13.75 14.5063 14.0193 15.1536 14.5578 15.6922C15.0964 16.2307 15.7438 16.5 16.5 16.5ZM16.5 26.6063C19.2958 24.0396 21.3698 21.7078 22.7219 19.6109C24.074 17.5141 24.75 15.6521 24.75 14.025C24.75 11.5271 23.9536 9.48177 22.3609 7.88906C20.7682 6.29635 18.8146 5.5 16.5 5.5C14.1854 5.5 12.2318 6.29635 10.6391 7.88906C9.04635 9.48177 8.25 11.5271 8.25 14.025C8.25 15.6521 8.92604 17.5141 10.2781 19.6109C11.6302 21.7078 13.7042 24.0396 16.5 26.6063ZM16.5 30.25C12.8104 27.1104 10.0547 24.1943 8.23281 21.5016C6.41094 18.8089 5.5 16.3167 5.5 14.025C5.5 10.5875 6.60573 7.84896 8.81719 5.80938C11.0286 3.76979 13.5896 2.75 16.5 2.75C19.4104 2.75 21.9714 3.76979 24.1828 5.80938C26.3943 7.84896 27.5 10.5875 27.5 14.025C27.5 16.3167 26.5891 18.8089 24.7672 21.5016C22.9453 24.1943 20.1896 27.1104 16.5 30.25Z" fill="white" />
+                      </svg>
+                    <p class="mb-1 md:text-center ">г. Солнечногорск, ул. Красная, 161</p>
+                </div>
+                <ul class="columns-2 md:columns-1 md:flex md:flex-col md:items-center font-bold">
+                    <li class="mb-1"><a href="#!">Продукция</a></li>
+                    <li class="mb-1"><a href="#!">Услуги</a></li>
+                    <li class="mb-1"><a href="#!">Преимущества</a></li>
+                    <li class="mb-1"><a href="#!">Акции</a></li>
+                    <li class="mb-1"><a href="#!">Отзывы</a></li>
+                    <li class="mb-1"><a href="#!">Сертификаты</a></li>
+                    <li class="mb-1"><a href="#!">Новости и статьи</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center justify-center gap-10 mt-14 lg:flex-col lg:gap-6 sm:text-sm">
+                <p class="md:text-center">©2024 Экстерьерные пленки DECORS</p>
+                <p class="md:text-center">Самоклеящиеся листы для ламинации сэндвича</p>
+            </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
